@@ -20,6 +20,7 @@ service3 = 2.00
 total3 = price3 + tax3 + service3
 print(f"Customer 3 total: RM{total3:.2f}")
 """
+
 """
 def add_with_print(a, b):
     result = a + b
@@ -36,7 +37,6 @@ print(f"x contains: {x}")
 # Test 2: Using return
 y = add_with_return(5, 3)
 print(f"y contains: {y}")
-
 """
 
 # Calculating areas without factorization
