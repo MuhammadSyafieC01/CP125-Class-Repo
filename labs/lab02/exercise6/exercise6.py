@@ -1,5 +1,4 @@
-=======
-    """
+"""
 Determines if a year is a leap year according to the Gregorian calendar.
 
 Rules:
