@@ -24,6 +24,7 @@ def simulate_leveling(total_xp):
 
     while can_level_up(total_xp,calculate_xp_required(current_level)):
         print
+        
 
 # Test your code here
 print("Testing Level Up Calculator...") 
