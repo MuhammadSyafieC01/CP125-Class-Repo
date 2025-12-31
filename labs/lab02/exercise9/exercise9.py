@@ -26,4 +26,4 @@ def simulate_leveling(total_xp):
         print
 
 # Test your code here
-print("Testing Level Up Calculator...")
+print("Testing Level Up Calculator...") 
