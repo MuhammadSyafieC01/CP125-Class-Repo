@@ -10,4 +10,13 @@ def manage_roster(enrolled, drop_requests, waitlist):
     Returns:
         int: Count of final enrolled students
     """
-    pass
+    setenrolled = set(enrolled)
+    setdroprequests = set(drop_requests)
+    setwaitlist = set(waitlist)
+    newenrolled = enrolled - setdroprequests
+    if len(newenrolled) < 5:
+        needtoadd = 7 - len(setdroprequests)
+
+    print(newenrolled,needtoadd)
+
+manage_roster({"Alice", "Bob", "Charlie", "Diana", "Eva", "Frank", "George"}, ["Alice", "Charlie", "Diana", "Eva"], {"Henry", "Iris", "Jack"})
