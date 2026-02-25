@@ -10,14 +10,17 @@ def process_actions(catalog, actions):
                 print(f"Borrow {i[1]}")
 
                 value = catalog.get(i[1]) - 1
-                catalog.update({i:value})
+                catalog[i] = value
                 
             else:
                 print(f"Return {i[1]}")
+                value = catalog.get(i[1]) + 1
+                catalog[i] = value
 
 
         else:
             print(f"{i[1]} Dont exist")
+            
 
 catalog = {
     "978-A": 2,
@@ -31,7 +34,9 @@ actions = [
     ("RETURN", "978-B"),
     ("BORROW", "978-Z"),
 ]
+print("\n")
 process_actions(catalog, actions)
 print("\n")
 print(catalog)
+print("\n")
 print("\n")
