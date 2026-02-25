@@ -1,8 +1,23 @@
 def process_actions(catalog, actions):
     # TODO: Your code here
-    pass
+
+    for i in actions:
+        if i[1] in catalog:
+
+            print(f"{i[1]} Exist")
+
+            if i[0] == "BORROW":
+                print(f"Borrow {i[1]}")
+
+                value = catalog.get(i[1]) - 1
+                catalog.update({i:value})
+                
+            else:
+                print(f"Return {i[1]}")
 
 
+        else:
+            print(f"{i[1]} Dont exist")
 
 catalog = {
     "978-A": 2,
@@ -16,5 +31,7 @@ actions = [
     ("RETURN", "978-B"),
     ("BORROW", "978-Z"),
 ]
-result = process_actions(catalog, actions)
-print(result)
+process_actions(catalog, actions)
+print("\n")
+print(catalog)
+print("\n")
