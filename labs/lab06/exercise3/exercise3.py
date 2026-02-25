@@ -10,7 +10,7 @@ def audit_blocklists(list_a, list_b, list_c):
     return (universal,redundant,uniqueaset)
 
 
-audit_blocklists({"malware.exe", "virus.zip"}
+feaudit_blocklists({"malware.exe", "virus.zip"}
 , {"virus.zip", "adware.dmg"}
 , {"virus.zip", "spyware.exe"}
 )
