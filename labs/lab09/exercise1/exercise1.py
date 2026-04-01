@@ -15,7 +15,7 @@ def explore_data(filename):
 
     info["total_students"] = size[0]
     info["subjects"] = subject
-    info["math_average"] = float(df["Math"].mean())
+    info["math_average"] = round(float(df["Math"].mean()),1)
     info["highest_math_student"] = None
     
     print(df)
@@ -27,3 +27,5 @@ def explore_data(filename):
 
 result = explore_data("labs\lab09\data\students.csv")
 print(result)
+
+#Push
